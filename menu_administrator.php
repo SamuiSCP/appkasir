@@ -33,7 +33,7 @@
     <a href="" class="nav-link">
         <i class="nav-icon fas fa-file"></i>
         <p>
-            Penjualana
+            Penjualan
             <i class="right fas fa-angle-left"></i>
         </p>
     </a>
@@ -45,7 +45,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="index.php?p=bayar" class="nav-link">
+            <a href="index.php?p=histori" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Histori</p>
             </a>
