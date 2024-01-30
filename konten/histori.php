@@ -49,7 +49,7 @@
                         <td><?= number_format($kolom['TotalHarga']) ; ?></td>
                         <td>
                         <!-- tombol print nota -->
-                        <a href="#"><i class="fas fa-print"></i></a>
+                        <a href="pdf/output/nota_jual.php?PenjualanID=<?= $kolom['PenjualanID']; ?> " target="_blank"><i class="fas fa-print"></i></a>
                         &nbsp;| &nbsp;
                         <!-- tombol informasi -->
                         <a href="index.php?p=infojual&PenjualanID=<?= $kolom['PenjualanID']; ?>"><i class="fas fa-search"></i></a>
@@ -101,7 +101,9 @@
                 ?>
             </table>
 
-            <button type="button" class="btn bg-info btn-block mt-3" data-toggle="modal" data-target="#modaltambah" ><i class="fas fa-plus"></i>Tambah Produk</button>
+           <a href="index.php?p=tambah">
+            <button class="btn bg-info btn-block"><i class="fas fa-plus"> Tambah Penjualan</i></button>
+           </a>
 
         </div>
     </div>

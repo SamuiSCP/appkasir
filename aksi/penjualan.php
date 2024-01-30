@@ -81,6 +81,10 @@ if($_POST){
           // echo $sql4."<br>";
           mysqli_query($koneksi,$sql4);
 
+          //mengurangi nilai stok
+          $sql5="UPDATE produk SET Stok=Stok-$Jumlah WHERE ProdukID=$ProdukID";
+          mysqli_query($koneksi,$sql5);
+
         }
         //perintah mengosongkan keranjang
         mysqli_query($koneksi,"DELETE FROM keranjang WHERE id_user=$id_user");
@@ -102,7 +106,7 @@ if($_GET){
     }
      else if ($_GET['aksi']=='hapus'){
         $PenjualanID=$_GET['PenjualanID'];
-        
+
         $sql1="DELETE FROM penjualan WHERE PenjualanID=$PenjualanID"; // Hard Delete
         mysqli_query($koneksi,$sql1);
 
